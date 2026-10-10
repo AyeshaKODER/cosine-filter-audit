@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+*.fab
+.venv/
+venv/
+flower-env/
+runs/
+.flwr/
+.cache/
+diagram/

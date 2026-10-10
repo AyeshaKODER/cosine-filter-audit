@@ -1,0 +1,170 @@
+{
+  "timestamp": "2026-09-18T16:55:06",
+  "config": {
+    "enforce": false,
+    "threshold": 0.7,
+    "attack_start_round": 1,
+    "attack_scale": 2.0,
+    "malicious_partition_id": 0,
+    "use_previous_global": false,
+    "num_rounds": 3
+  },
+  "detection_log": {
+    "1": {
+      "9635018699433645229": {
+        "similarity": 0.9997338652610779,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "12961307386096204606": {
+        "similarity": 0.9998006820678711,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "4089401471435960913": {
+        "similarity": 0.9997779726982117,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "1709385577468290385": {
+        "similarity": 0.9998325705528259,
+        "flagged": false,
+        "is_attacker": true
+      },
+      "14529397163480173474": {
+        "similarity": 0.9998064637184143,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "4569998696108678915": {
+        "similarity": 0.9997171759605408,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "13221113545929012842": {
+        "similarity": 0.9997878670692444,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "9927887243698085532": {
+        "similarity": 0.9998148083686829,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "14323155096124326742": {
+        "similarity": 0.9998131990432739,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "13825191821038449619": {
+        "similarity": 0.9998188018798828,
+        "flagged": false,
+        "is_attacker": false
+      }
+    },
+    "2": {
+      "1709385577468290385": {
+        "similarity": 0.9987269639968872,
+        "flagged": false,
+        "is_attacker": true
+      },
+      "12961307386096204606": {
+        "similarity": 0.998547375202179,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "9635018699433645229": {
+        "similarity": 0.9984432458877563,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "14529397163480173474": {
+        "similarity": 0.9984514713287354,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "4089401471435960913": {
+        "similarity": 0.9985060691833496,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "4569998696108678915": {
+        "similarity": 0.9986573457717896,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "13221113545929012842": {
+        "similarity": 0.9984688758850098,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "13825191821038449619": {
+        "similarity": 0.9977982044219971,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "9927887243698085532": {
+        "similarity": 0.9986456036567688,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "14323155096124326742": {
+        "similarity": 0.9985585808753967,
+        "flagged": false,
+        "is_attacker": false
+      }
+    },
+    "3": {
+      "9635018699433645229": {
+        "similarity": 0.9978855848312378,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "4569998696108678915": {
+        "similarity": 0.9981068968772888,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "12961307386096204606": {
+        "similarity": 0.997913122177124,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "4089401471435960913": {
+        "similarity": 0.9976869225502014,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "1709385577468290385": {
+        "similarity": 0.9982572793960571,
+        "flagged": false,
+        "is_attacker": true
+      },
+      "14529397163480173474": {
+        "similarity": 0.99800705909729,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "13221113545929012842": {
+        "similarity": 0.9974665641784668,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "13825191821038449619": {
+        "similarity": 0.9977798461914062,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "9927887243698085532": {
+        "similarity": 0.9980303049087524,
+        "flagged": false,
+        "is_attacker": false
+      },
+      "14323155096124326742": {
+        "similarity": 0.9979357719421387,
+        "flagged": false,
+        "is_attacker": false
+      }
+    }
+  }
+}

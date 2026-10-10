@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "run_id": "20261005T130353Z_ddcc4b91d6a5",
+  "created_at": "2026-10-05T13:05:15.327640+00:00",
+  "provenance": {
+    "code_revision": null,
+    "code_revision_note": "Workspace is not a Git repository",
+    "python": "3.12.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "torch": "2.10.0+cpu",
+    "numpy": "2.5.1",
+    "flower": "1.36.0",
+    "dataset": "uoft-cs/cifar10",
+    "dataset_revision": null,
+    "dataset_revision_note": "Dataset revision is not pinned by this project",
+    "partitioning": "IID; Flower IidPartitioner",
+    "partition_split_seed": 42,
+    "partition_assignment_seed": null,
+    "registered_node_ids": [
+      1194908862142532822,
+      1500271421367918911,
+      1869355666124481155,
+      3939121301026214175,
+      4319850493723335983,
+      5073916329936291320,
+      5422609772015850417,
+      7667507835675303004,
+      11502042109105528125,
+      17652106377596995203
+    ],
+    "initial_model_sha256": "00f95558b2b529ff9ceb6e890caf9d58cb2a02b4fbfea7f49d5fba10328cfef5"
+  },
+  "config": {
+    "num-server-rounds": 1,
+    "fraction-evaluate": 0.5,
+    "learning-rate": 0.01,
+    "batch-size": 32,
+    "local-epochs": 1,
+    "save-model": false,
+    "representation-mode": "delta",
+    "reference-mode": "current_mean",
+    "selection-mode": "none",
+    "cosine-threshold": 0.7,
+    "attack-start-round": 999,
+    "attack-scale": 1.0,
+    "attacker-node-id": -1,
+    "malicious-partition-id": 0,
+    "seed": 42,
+    "deterministic": true,
+    "representation_mode": "delta",
+    "reference_mode": "current_mean",
+    "selection_mode": "none",
+    "threshold": 0.7,
+    "attack_start_round": 999,
+    "attack_scale": 1.0,
+    "attacker_node_id": 1194908862142532822,
+    "malicious_partition_id": 0,
+    "num_rounds": 1
+  },
+  "rounds": {
+    "1": {
+      "round_status": "AGGREGATE_FINITE",
+      "representation_mode": "delta",
+      "reference_mode": "current_mean",
+      "effective_reference": "current_mean",
+      "reference_dimension": 62006,
+      "reference_sha256": "f15a576e2332e1baa1f457a41fa05d4f62dad67e126f8d88b955a51965e473d3",
+      "reference_norm": 0.7448529601097107,
+      "selection_mode": "none",
+      "attacker_node_id": 1194908862142532822,
+      "clients": {
+        "1500271421367918911": {
+          "is_attacker": false,
+          "score": 0.9494785070419312,
+          "vector_sha256": "b4fcfaba49d3ce260847ae809576556df4a600162af3ac35b0e6a9be0a128aa4",
+          "flagged": false,
+          "selected": true,
+          "sample_count": 4000,
+          "status": "SCORED",
+          "aggregation_weight": 0.1
+        },
+        "17652106377596995203": {
+          "is_attacker": false,
+          "score": 0.9597563743591309,
+          "vector_sha256": "94bd00318fc44708cf2c552e870f24c1a518c27196603f18678f7585ace74f32",
+          "flagged": false,
+          "selected": true,
+          "sample_count": 4000,
+          "status": "SCORED",
+          "aggregation_weight": 0.1
+        },
+        "4319850493723335983": {
+          "is_attacker": false,
+          "score": 0.9278694987297058,
+          "vector_sha256": "be8e0eb0ec822569e7154c4d30d88a9f3b4ae960cf3f0a394fa02c1d669d6837",
+          "flagged": false,
+          "selected": true,
+          "sample_count": 4000,
+          "status": "SCORED",
+          "aggregation_weight": 0.1
+        },
+        "3939121301026214175": {
+          "is_attacker": false,
+          "score": 0.9486154317855835,
+          "vector_sha256": "deae3f23b1af762f43eaf1750e2983c210451bc71acd73c42592d4bc1987cc7c",
+          "flagged": false,
+          "selected": true,
+          "sample_count": 4000,
+          "status": "SCORED",
+          "aggregation_weight": 0.1
+        },
+        "7667507835675303004": {
+          "is_attacker": false,
+          "score": 0.9480330348014832,
+          "vector_sha256": "1b15db1d5521e38932abb438a01f3fe98584abf2788da7df4178c83e7a3fb638",
+          "flagged": false,
+          "selected": true,
+          "sample_count": 4000,
+          "status": "SCORED",
+          "aggregation_weight": 0.1
+        },
+        "5422609772015850417": {
+          "is_attacker": false,
+          "score": 0.9628628492355347,
+          "vector_sha256": "01d8ce9b3db68e4c46aacf5a4217acb041de0e92e2b2bb3e168e54c5a5bd8960",
+          "flagged": false,
+          "selected": true,
+          "sample_count": 4000,
+          "status": "SCORED",
+          "aggregation_weight": 0.1
+        },
+        "1869355666124481155": {
+          "is_attacker": false,
+          "score": 0.9668400883674622,
+          "vector_sha256": "96f251cf64febaf78f4a8876dfcd0457f2e31d1862aa88aef0160b14ee587838",
+          "flagged": false,
+          "selected": true,
+          "sample_count": 4000,
+          "status": "SCORED",
+          "aggregation_weight": 0.1
+        },
+        "1194908862142532822": {
+          "is_attacker": true,
+          "score": 0.9665517807006836,
+          "vector_sha256": "56099f4c764a565204f191cb9393c0f77334deca5c218bff6a8c77323cbbdb60",
+          "flagged": false,
+          "selected": true,
+          "sample_count": 4000,
+          "status": "SCORED",
+          "aggregation_weight": 0.1
+        },
+        "11502042109105528125": {
+          "is_attacker": false,
+          "score": 0.9618189334869385,
+          "vector_sha256": "4c0ae0e38038febfe02e4c51ae80cc723492b4568053701cfbf141db58c3092c",
+          "flagged": false,
+          "selected": true,
+          "sample_count": 4000,
+          "status": "SCORED",
+          "aggregation_weight": 0.1
+        },
+        "5073916329936291320": {
+          "is_attacker": false,
+          "score": 0.967857301235199,
+          "vector_sha256": "ceceda09d8d53fbbd0f11fbf5440a0a6b14f664408072c5d0072f3d90d7bb992",
+          "flagged": false,
+          "selected": true,
+          "sample_count": 4000,
+          "status": "SCORED",
+          "aggregation_weight": 0.1
+        }
+      },
+      "invalid_clients": {},
+      "selected_node_ids": [
+        1194908862142532822,
+        1500271421367918911,
+        1869355666124481155,
+        3939121301026214175,
+        4319850493723335983,
+        5073916329936291320,
+        5422609772015850417,
+        7667507835675303004,
+        11502042109105528125,
+        17652106377596995203
+      ],
+      "model_diagnostics": {
+        "norm": 8.985126495361328,
+        "max_abs": 0.15168723464012146,
+        "is_finite": true,
+        "nonfinite_tensors": {}
+      },
+      "update_diagnostics": {
+        "norm": 0.7448529601097107,
+        "max_abs": 0.1365816742181778,
+        "is_finite": true,
+        "nonfinite_tensors": {}
+      }
+    }
+  },
+  "server_evaluation_metrics": {
+    "0": {
+      "accuracy": 0.1015,
+      "loss": 2.3058795325363737
+    },
+    "1": {
+      "accuracy": 0.186,
+      "loss": 2.2088073295882986
+    }
+  }
+}

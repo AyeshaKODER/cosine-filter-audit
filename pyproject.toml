@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cosine-filter-audit"
+version = "0.1.0"
+description = "Reproducible audit experiments for cosine-threshold filtering in federated learning"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = [
+    "flwr[simulation]>=1.36.0,<1.37.0",
+    "flwr-datasets[vision]>=0.6.1,<0.7.0",
+    "numpy==2.2.6",
+    "torch==2.10.0",
+    "torchvision==0.25.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["cosine_filter_audit"]
+
+[tool.flwr.app]
+publisher = "cosine-filter-audit"
+fab-format-version = 1
+flwr-version-target = "1.36.0"
+
+[tool.flwr.app.components]
+serverapp = "cosine_filter_audit.server_app:app"
+clientapp = "cosine_filter_audit.client_app:app"
+
+[tool.flwr.app.config]
+num-server-rounds = 10
+fraction-evaluate = 0.5
+learning-rate = 0.01
+batch-size = 32
+local-epochs = 1
+save-model = false
+run-output-dir = "runs"
+representation-mode = "delta"
+reference-mode = "current_mean"
+selection-mode = "detector"
+aggregation-mode = "fedavg"
+byzantine-count = 1
+multi-krum-count = -1
+cosine-threshold = 0.7
+multi-signal-threshold = 3.5
+adaptive-attack-mode = "none"
+adaptive-attack-steps = 3
+adaptive-attack-step-size = 0.01
+partitioning-mode = "iid"
+dirichlet-alpha = 0.3
+partition-seed = 42
+attack-start-round = 999
+attack-scale = 1.0
+attacker-node-id = -1
+malicious-partition-id = 0
+seed = 42
+deterministic = true
+run-suite = false
+suite-seeds = "42"
+suite-regimes = "iid"
+suite-phase = "development"
+suite-calibration-source = ""
+suite-resume-manifest = ""
+suite-attack-start-round = 1
+suite-attack-modes = "none,phase1_own_history,phase2_cohort_aware"
+suite-selection-arms = "none,cosine,multi_signal,oracle,random_same_size,benign_only"
+suite-aggregation-arms = "krum,multi_krum,coordinate_median,trimmed_mean"
