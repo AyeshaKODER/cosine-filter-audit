@@ -232,23 +232,6 @@ moving to another host, and retain its relative run-artifact paths. Analysis
 refuses an incomplete suite manifest; inspect individual run records for
 diagnostics, but do not report a partial suite as complete.
 
-## Local interactive interface
-
-The dependency-free, single-user UI is bound to loopback. Start it from the
-repository root in the activated environment:
-
-```powershell
-python -m cosine_filter_audit.web_server
-```
-
-Open `http://127.0.0.1:8765`. The UI lists recorded runs, shows per-round
-evaluation and detector outcomes, and can launch one Flower run at a time.
-It has not been updated to expose the multi-signal or adaptive-attack settings;
-use `flwr run` configuration for those experiments.
-Launching may download CIFAR-10 and trains clients; the UI asks for confirmation
-before starting. Keep this prototype on the local machine: it has no user
-authentication and is not designed for public or multi-user deployment.
-
 ## Historical artifacts
 
 `results/legacy_full_model/` contains the timestamped JSON and CSV records from
